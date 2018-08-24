@@ -6,4 +6,7 @@ describe Astronaut, type: :model do
     it { should validate_presence_of :age }
     it { should validate_presence_of :job }
   end
+  describe 'relationships' do
+    it {should belong_to(:space_mission)}
+  end
 end
